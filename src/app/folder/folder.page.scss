@@ -9,6 +9,13 @@ ion-menu-button {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 5%; 
+  background:rgba(255, 255, 255, 0.815);
+  width: 350px;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
 }
 
 #container strong {
@@ -25,4 +32,67 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+ion-grid.header {
+  text-align: start;
+  strong {
+    font-size: 25px !important;
+    color: #9b0c08;
+  }
+}
+
+ion-grid.teclado {
+  margin-top: 30px;
+}
+
+ion-fab-button {
+  --background: #e6e7e7 !important;
+  --color: #505151 !important;
+  strong {
+    font-size: 40px !important;
+  }
+  border: 1px solid #b6b3b4 !important;
+  border-radius: 100%;
+}
+
+ion-fab-button.purple {
+  --background: #71018e !important;
+  --color: #fff !important;
+}
+
+ion-fab-button.yellow {
+  --background: #fea900 !important;
+  --color: #fff !important;
+}
+
+ion-fab-button.green {
+  --background: #10b92f !important;
+  --color: #fff !important;
+}
+
+ion-fab-button.red {
+  --background: #9b0c08 !important;
+  --color: #fff !important;
+}
+
+ion-fab-button.zero {
+  --border-radius: 100px;
+  border-radius: 100px;
+  width: 140px;
+}
+
+div#container-input {
+  text-align: start;
+  font-size: 17px;
+}
+
+ion-input {
+  border: 1px solid #b6b3b4 !important;
+  border-radius: 10px;
+  text-align: start;
+  background: #fff;
+  height: 56px;
+  color: #505151;
+  font-size: 25px;
 }

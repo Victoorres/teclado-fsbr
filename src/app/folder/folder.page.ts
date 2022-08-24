@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-folder',
@@ -7,12 +6,18 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
-  public folder: string;
-
-  constructor(private activatedRoute: ActivatedRoute) { }
+  public digitado: string = "";
+  
+  constructor() { }
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
+  public digitarTecla(tecla: string):void {
+    this.digitado = this.digitado.concat(tecla);
+  }
+
+  public limparInput():void {
+    this.digitado = "";
+  }
 }
