@@ -18,7 +18,7 @@
    - Inicie o app: 
         ionic serve *web*
         ionic capacitor run android *android*
-        ionic cordova run ios *ios*
+        ionic capacitor run ios *ios*
    ```
 
 ---
