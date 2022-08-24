@@ -2,7 +2,7 @@
 
    <p>
    
-   - [Link web 🚀](https://evening-mountain-39272.herokuapp.com/folder/Inbox)
+   - [Link web 🚀](https://evening-mountain-39272.herokuapp.com)
    - [Link apk 📖](https://drive.google.com/file/d/1kR5zcdEb3QeU2PEE1q0RNKyBX5FupuC4/view?usp=sharing)
    </p>
 
