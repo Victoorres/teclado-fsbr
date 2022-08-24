@@ -1,21 +1,112 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-grid class="header">
+      <ion-row>
+        <ion-col size="12">
+          <strong>Parcial - Mesa: 100</strong>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="teclado">
+      <ion-row>
+        <ion-col size="9">
+          <div class="container-input" class="list list-inset">
+            <ion-input disabled [value]="digitado"></ion-input>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button class="red" size="large" (click)="limparInput()">
+            <strong>C</strong>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('1')">
+            <strong>1</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('2')">
+            <strong>2</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('3')">
+            <strong>3</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button color="primary" size="large">
+            <strong>P</strong>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('4')">
+            <strong>4</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('5')">
+            <strong>5</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('6')">
+            <strong>6</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button class="purple" size="large">
+            <strong>T</strong>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('7')">
+            <strong>7</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('8')">
+            <strong>8</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button size="large" (click)="digitarTecla('9')">
+            <strong>9</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button class="yellow" size="large">
+            <strong>X</strong>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <ion-fab-button class="zero" size="large" (click)="digitarTecla('0')">
+            <strong>0</strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-fab-button class="green" size="large">
+            <strong><ion-icon name="checkmark-outline"></ion-icon></strong>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-fab-button class="red" size="large">
+            <strong><ion-icon name="remove-outline"></ion-icon></strong>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
