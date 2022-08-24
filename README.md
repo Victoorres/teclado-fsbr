@@ -14,7 +14,7 @@
    - Clone esse repositório:
         git clone https://github.com/Victoorres/teclado-fsbr.git
    - Instale as dependências:
-        npm start
+        npm install
    - Inicie o app: 
         ionic serve *web*
         ionic capacitor run android *android*
